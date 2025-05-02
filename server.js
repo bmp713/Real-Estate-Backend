@@ -176,7 +176,6 @@ app.post("/update/:id", async (req, res) => {
 
 // Delete product by id
 app.delete("/delete/:id", async (req, res) => {
-
     try {
         const property = await Properties.deleteOne({ id: req.params.id });
         console.log('property =>', property);
